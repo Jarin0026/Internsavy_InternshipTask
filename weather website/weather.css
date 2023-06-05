@@ -1,0 +1,167 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Poppins&display=swap');
+
+
+  *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+  }
+
+
+  .container{
+    color: white;
+    background-color: #020202e1;
+    padding: 4rem;
+    width: 40%;
+    margin: 4rem auto;
+    border-radius: 1rem;
+  }
+
+
+
+  input{
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    outline: none;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+  }
+
+  input::placeholder{
+    color: white;
+  }
+
+  .weather_search{
+    position: relative;
+  }
+
+  .weather_search button{
+    position: absolute;
+    
+    font-size: 20px;
+    color: white;
+    border: none;
+    background-color: #000000;
+    padding: 8px;
+    border-radius: 20px;
+    margin-left: 5px;
+  }
+
+  .weather_search button:hover{
+    cursor: pointer;
+    color: reds;
+  }
+
+
+
+  .main_container{
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+ 
+
+  .weather_forecast{
+    background-color: rgba(44, 42, 42, 0.812);
+    display: inline-block;
+    padding: 0.5rem 0.5rem;
+    border-radius: 1rem;
+  }
+
+ 
+
+  .weather_temperature{
+    font-size: 2.5rem;
+  }
+
+  .weather_info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .weatherTemp_minmax{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .weatherTemp_minmax p{
+    font-size: 15px;
+  } 
+
+  .weather_card{
+    display: flex;
+    justify-content: center;
+    background-color:rgba(44, 42, 42, 0.812) ;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.7rem;
+  }
+
+  .weather_card i{
+    font-size: 2rem;
+    margin-right: 0.9rem;
+    margin-top: 0.5rem;
+  }
+
+  .weather_card p{
+    font-size: 15px;
+  }
+
+  .weather_forecast{
+    font-size: 20px;
+  }
+
+  .weather_city{
+    font-size: 30px;
+  }
+
+
+/* Responsive */
+
+@media(max-width:1130px){
+    .container{
+        width: 90%;
+        margin: 3rem auto;
+    }
+}
+
+@media(max-width:495px){
+    .container{
+        margin: 2rem auto;
+    }
+    .weather_header{
+        display: flex;
+        flex-direction: column;
+      }
+    .weather_units{
+        margin-top: 1rem;
+    }
+    .main_container{
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:445px){
+    h1{
+        font-size: 20px;
+    }
+    .weather_card i{
+        font-size: 1rem;
+      }
+      .weather_card p{
+        font-size: 10px;
+      }
+}
+
+@media(max-width:361px){
+  .weather_search input{
+    width: 150px;
+    
+  }
+}
+
